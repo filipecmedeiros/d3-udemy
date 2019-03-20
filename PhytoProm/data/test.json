@@ -1,0 +1,34 @@
+[
+	{
+		"promoter": "Vigun01",
+		"upstream": "2"
+	},
+	{
+		"promoter": "Vigun01",
+		"upstream": "500"
+	},
+	{
+		"promoter": "Vigun01",
+		"upstream": "675"
+	},
+	{
+		"promoter": "Vigun01",
+		"upstream": "828"
+	},
+	{
+		"promoter": "Vigun02",
+		"upstream": "623"
+	},
+	{
+		"promoter": "Vigun03",
+		"upstream": "601"
+	},
+	{
+		"promoter": "Vigun04",
+		"upstream": "599"
+	},
+	{
+		"promoter": "Vigun05",
+		"upstream": "50"
+	}
+]

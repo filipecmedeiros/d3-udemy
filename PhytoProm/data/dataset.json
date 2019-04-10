@@ -1,110 +1,137 @@
 [
 	{
 		"promoter": "Vigun01",
+		"name": "PBF",
 		"upstream": [2, 57, 150, 376]
 	},
 	{
 		"promoter": "Vigun01",
+		"name": "PBF",
 		"upstream": [500, 732, 765]
 	},
 	{
 		"promoter": "Vigun01",
+		"name":"PEND",
 		"upstream": [675]
 	},
 	{
 		"promoter": "Vigun02",
+		"name":"AHL12",
 		"upstream": [623]
 	},
 	{
 		"promoter": "Vigun03",
+		"name":"DOF",
 		"upstream": [133, 601]
 	},
 	{
 		"promoter": "Vigun04",
+		"name":"DOF2",
 		"upstream": [599, 650]
 	},
 	{
 		"promoter": "Vigun05",
+		"name":"MYB",
 		"upstream": [50, 789]
 	},
 	{
 		"promoter": "Vigun01",
+		"name":"DOF",
 		"upstream": [675]
 	},
 	{
 		"promoter": "Vigun02",
+		"name":"MYB",
 		"upstream": [623]
 	},
 	{
 		"promoter": "Vigun03",
+		"name":"KHAN",
 		"upstream": [133, 601]
 	},
 	{
 		"promoter": "Vigun04",
+		"name":"KHAN",
 		"upstream": [599, 650]
 	},
 	{
 		"promoter": "Vigun05",
+		"name":"DOF",
 		"upstream": [50, 789]
 	},
   {
 	  "promoter": "Vigun11",
+	  "name":"DOF",
 	  "upstream": [675]
   },
   {
 	  "promoter": "Vigun102",
+	  "name":"PBF",
 	  "upstream": [623]
   },
   {
 	  "promoter": "Vigun103",
+	  "name":"MYB",
 	  "upstream": [133, 601]
   },
   {
 	  "promoter": "Vigun104",
+	  "name":"DOF",
 	  "upstream": [599, 650]
   },
   {
 	  "promoter": "Vigun105",
+	  "name":"PBF",
 	  "upstream": [50, 789]
   },
   {
 		"promoter": "Vigun01",
+		"name":"DOF",
 		"upstream": [675]
 	},
 	{
 		"promoter": "Vigun02",
+		"name":"DOF",
 		"upstream": [623]
 	},
 	{
 		"promoter": "Vigun03",
+		"name":"AHL12",
 		"upstream": [133, 601]
 	},
 	{
 		"promoter": "Vigun04",
+		"name":"AHL12",
 		"upstream": [599, 650]
 	},
 	{
 		"promoter": "Vigun05",
+		"name":"PBF",
 		"upstream": [50, 789]
 	},
 	{
 	  "promoter": "Vigun201",
+	  "name":"MYB",
 	  "upstream": [675]
   },
   {
 	  "promoter": "Vigun202",
+	  "name":"AHL12",
 	  "upstream": [623]
   },
   {
 	  "promoter": "Vigun203",
+	  "name":"AHL12",
 	  "upstream": [133, 601]
   },
   {
 	  "promoter": "Vigun204",
+	  "name":"DOF",
 	  "upstream": [599, 650]
   },
   {
 	  "promoter": "Vigun205",
+	  "name":"AHL12",
 	  "upstream": [50, 789]
   }
 ]

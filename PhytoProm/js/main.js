@@ -25,12 +25,19 @@ d3.json("data/dataset.json").then(function(data){
             return d.promoter;
         }))
         .range([0, height])
-        .paddingInner(0.2)
-        .paddingOuter(0.2);
+        .paddingInner(0.3)
+        .paddingOuter(1);
 
     var x = d3.scaleLinear()
         .domain([0,1000])
         .range([0,width]);
+    
+    var color = d3.scaleSequential(d3.interpolateRainbow);
+    var cisElement = d3.scaleBand()
+        .domain(data.map(function(d){
+            return d.name;
+        }))
+        .range([0,1]);
 
     var line = g.selectAll("line")
         .data(data);
@@ -41,7 +48,7 @@ d3.json("data/dataset.json").then(function(data){
             .attr('y1', (d,i)=>y(d.promoter))
             .attr('x2', width)
             .attr('y2', (d,i)=>y(d.promoter))
-            .attr('stroke-width', 1)
+            .attr('stroke-width', 0.8)
             .attr('stroke', 'black');
 
 
@@ -63,20 +70,29 @@ d3.json("data/dataset.json").then(function(data){
             })
             .attr("r", 5)
             .attr("fill", function(d) {
-                return "black";
-            });
+                return color(cisElement(d.name));
+            })
+            .attr("stroke-width", 1)
+            .attr("stroke", "black");
 
     function getCircleData(d) {
-    var cdata = d.upstream.map (function(ele) { 
-        return {upstream: ele, promoter: d.promoter};
-    });
-    return cdata; 
-    }
-    
-    function getCircleData(d) {
         var cdata = d.upstream.map (function(ele) { 
-            return {upstream: ele, promoter: d.promoter};
+            return {upstream: ele, promoter: d.promoter, name:d.name};
         });
+        
         return cdata; 
-        }
+    }
+
+    var yAxisGroup = d3.selectAll('svg').append('g')
+                           .attr('class','yAxis')
+                           .attr('transform','translate(' + margin.left + ', 0)');
+    var yAxis = d3.axisLeft(y);
+    yAxisGroup.call(yAxis);
+
+
+    var xAxisGroup = d3.selectAll('svg').append('g')
+                           .attr('class','xAxis')
+                           .attr('transform','translate('+margin.left+','+height+')');
+    var xAxis = d3.axisBottom(x);
+    xAxisGroup.call(xAxis);
 });

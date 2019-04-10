@@ -1,0 +1,110 @@
+[
+	{
+		"promoter": "Vigun01",
+		"upstream": [2, 57, 150, 376]
+	},
+	{
+		"promoter": "Vigun01",
+		"upstream": [500, 732, 765]
+	},
+	{
+		"promoter": "Vigun01",
+		"upstream": [675]
+	},
+	{
+		"promoter": "Vigun02",
+		"upstream": [623]
+	},
+	{
+		"promoter": "Vigun03",
+		"upstream": [133, 601]
+	},
+	{
+		"promoter": "Vigun04",
+		"upstream": [599, 650]
+	},
+	{
+		"promoter": "Vigun05",
+		"upstream": [50, 789]
+	},
+	{
+		"promoter": "Vigun01",
+		"upstream": [675]
+	},
+	{
+		"promoter": "Vigun02",
+		"upstream": [623]
+	},
+	{
+		"promoter": "Vigun03",
+		"upstream": [133, 601]
+	},
+	{
+		"promoter": "Vigun04",
+		"upstream": [599, 650]
+	},
+	{
+		"promoter": "Vigun05",
+		"upstream": [50, 789]
+	},
+  {
+	  "promoter": "Vigun11",
+	  "upstream": [675]
+  },
+  {
+	  "promoter": "Vigun102",
+	  "upstream": [623]
+  },
+  {
+	  "promoter": "Vigun103",
+	  "upstream": [133, 601]
+  },
+  {
+	  "promoter": "Vigun104",
+	  "upstream": [599, 650]
+  },
+  {
+	  "promoter": "Vigun105",
+	  "upstream": [50, 789]
+  },
+  {
+		"promoter": "Vigun01",
+		"upstream": [675]
+	},
+	{
+		"promoter": "Vigun02",
+		"upstream": [623]
+	},
+	{
+		"promoter": "Vigun03",
+		"upstream": [133, 601]
+	},
+	{
+		"promoter": "Vigun04",
+		"upstream": [599, 650]
+	},
+	{
+		"promoter": "Vigun05",
+		"upstream": [50, 789]
+	},
+	{
+	  "promoter": "Vigun201",
+	  "upstream": [675]
+  },
+  {
+	  "promoter": "Vigun202",
+	  "upstream": [623]
+  },
+  {
+	  "promoter": "Vigun203",
+	  "upstream": [133, 601]
+  },
+  {
+	  "promoter": "Vigun204",
+	  "upstream": [599, 650]
+  },
+  {
+	  "promoter": "Vigun205",
+	  "upstream": [50, 789]
+  }
+]

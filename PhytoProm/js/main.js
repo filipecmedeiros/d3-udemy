@@ -4,9 +4,9 @@
  * Cis-Element visualization by promoter
 */
 
-var margin = {'left': 150, 'right': 10, 'top': 10, 'bottom': 100};
+var margin = {'left': 150, 'right': 115, 'top': 10, 'bottom': 100};
 
-var width = 900 - margin.left - margin.right;
+var width = 1020 - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 
 var g = d3.select("body")
@@ -33,7 +33,7 @@ d3.json("data/dataset.json").then(function(data){
         .range([0,width]);
     
     var color = d3.scaleSequential(d3.interpolateRainbow);
-    var cisElement = d3.scaleBand()
+    var motif = d3.scaleBand()
         .domain(data.map(function(d){
             return d.name;
         }))
@@ -70,7 +70,7 @@ d3.json("data/dataset.json").then(function(data){
             })
             .attr("r", 5)
             .attr("fill", function(d) {
-                return color(cisElement(d.name));
+                return color(motif(d.name));
             })
             .attr("stroke-width", 1)
             .attr("stroke", "black");
@@ -95,4 +95,33 @@ d3.json("data/dataset.json").then(function(data){
                            .attr('transform','translate('+margin.left+','+height+')');
     var xAxis = d3.axisBottom(x);
     xAxisGroup.call(xAxis);
+
+    var legendScale = d3.scaleBand()
+                        .domain(data.map(d=>d.name))
+                        .range([0, height]);
+
+    var legend = d3.selectAll('svg').append("g")
+        .attr("class", "legend")
+        .attr("x", width+margin.left + 15)
+        .attr("y", 50)
+        .attr("height", height)
+        .attr("width", 100);
+    
+    var legend = legend.selectAll(".legend")
+                .data(data)
+                .enter();
+
+    legend.append("circle")
+            .attr("cx", width + margin.left + 25)
+            .attr("cy", d=>legendScale(d.name)+25)
+            .attr("r", 5)
+            .style("fill", function(d) {
+                return color(motif(d.name));
+            });
+    
+    legend.append("text")
+        .attr("x", width + margin.left + 45)
+        .attr("y", d=>legendScale(d.name)+30)
+        .text(d=>d.name)
+        .attr("font-weight", "bold");
 });

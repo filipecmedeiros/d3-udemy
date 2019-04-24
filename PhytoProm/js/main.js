@@ -9,7 +9,7 @@ var margin = {'left': 150, 'right': 115, 'top': 10, 'bottom': 100};
 var width = 1020 - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 
-var g = d3.select("body")
+var g = d3.select("#chart-area")
             .append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
